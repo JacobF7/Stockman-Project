@@ -21,7 +21,7 @@ class Product(val name: String, val quantity: Int) {
     * @return a tabular representation of the product.
     */
   def tabulate: String = {
-    val cellWidth: Int = 35 // width of each cell in table
+    val cellWidth: Int = 35 // width of each cell in the table
     s"| ${name.padTo(cellWidth, " ").mkString} | ${quantity.toString.padTo(cellWidth, " ").mkString} |"
   }
 

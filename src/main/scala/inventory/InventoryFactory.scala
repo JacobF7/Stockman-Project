@@ -36,7 +36,7 @@ object InventoryFactory {
   private def filter(inventory: List[String]) : List[String] = inventory.filter(product => !product.startsWith(getIgnoreKeyword))
 
   /**
-    * @return a [[String]] containing the keyword to ignore whilst parsing the file
+    * @return a [[String]] containing the keyword to ignore whilst parsing the file.
     */
   private def getIgnoreKeyword: String = "#"
 
